@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> redis 0.3
+

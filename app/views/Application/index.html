@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div id="socketout"></div>
+
+<script type="text/javascript">
+    // Create a socket
+    var socket = new WebSocket('@@{WebSocket.RedisSocket.message}')
+
+    // Message received on the socket
+    socket.onmessage = function(event) {
+        $('#socketout').append(event.data+"<br />");
+    }
+</script>
