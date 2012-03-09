@@ -19,12 +19,11 @@ public class WebSocket extends Controller {
 		public static void message() {
 			
 			webSocketClient.add(outbound);
-			System.out.println("websocket message");
+			System.out.println("New websocket client");
 			while (inbound.isOpen()) {
-				WebSocketEvent e = await(inbound.nextEvent());
+				await(inbound.nextEvent());
 			}
 
-			System.out.println("inbound close");
 		}
 
 	}

@@ -15,14 +15,9 @@ import listener.RedisListener;
 
 
 public class Application extends Controller {
-
+	
     public static void index() {
-    	
-    	F.EventStream event = new F.EventStream();
-    	
-    	RedisJob job = new RedisJob();
-    	job.now();
-        render();
+        render();   	
     }
 
 }
