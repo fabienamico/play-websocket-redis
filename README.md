@@ -25,3 +25,9 @@ Publier des messages depuis le client redis
 ``PUBLISH playChanel "Message 1"``
 
 Le message doit apparaitre dans les navigateurs :)
+
+## Auteur 
+Fabien AMICO
+
+[![endorse](http://api.coderwall.com/fabienamico/endorsecount.png)](http://coderwall.com/fabienamico)
+
